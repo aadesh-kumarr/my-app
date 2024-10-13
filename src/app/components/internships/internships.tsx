@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { Edureka } from "./internship_content";
+import { Edureka,Lostronaunt } from "./internship_content";
 
 export default function Internship() {
   // State to track if the Edureka div is open
@@ -36,6 +36,7 @@ export default function Internship() {
       </div>
 
       <div className=" text-white">
+        <Lostronaunt />
 
         
       </div>

@@ -58,7 +58,9 @@ export function Lostronaunt(){
 
     return(
         <>
+        <div className="border border-neutral-200 m-4 bg-gradient-to-br from-black/40 to to-black/10">
         
+        </div>
         
         </>
     )
