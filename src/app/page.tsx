@@ -1,13 +1,14 @@
-import Navbar from "./components/navbar";
-import TypingAnimation from "./components/typing";
-import Portrait from "./components/portrait";
-import SideBar from "./components/sidebar";
-import Resume from "./components/resume";
-import About from "./components/about";
+import Navbar from "./components/main/navbar";
+import TypingAnimation from "./components/main/typing";
+import Portrait from "./components/main/portrait";
+import SideBar from "./components/main/sidebar";
+import Resume from "./components/main/resume";
+import About from "./components/main/about";
 import Internship from "./components/internships/internships";
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br absolute w-screen from-stone-950 to-stone-900 no-scrollbar overflow-x-hidden">
+    <div className="bg-gradient-to-br absolute 
+    max-w-full from-stone-950 to-stone-900 no-scrollbar overflow-x-hidden">
      <div className="fixed top-0 left-0 px-2 right-0 " >
       <SideBar />
       <Resume/>

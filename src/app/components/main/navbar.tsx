@@ -13,7 +13,7 @@ export default function Navbar() {
 
         <>
     <div className="w-screen flex  mt-5 mb-3 justify-between text-stone-100 z-50" >
-      <ul className="flex absolute bg-zinc-900 pt-1 px-2 rounded-full gap-3  text-[10px]  font-serif">
+      <ul className="flex absolute bg-zinc-900 pt-1 px-2 rounded-full gap-3 text-sm  font-serif">
         <li className="cursor-pointer">
           <Link href='/' onClick={scrollToTop} >Home</Link>
         </li>

@@ -13,17 +13,15 @@ export default function SideBar() {
   const [activeLink, setActiveLink] = useState<string | null>(null);
   const sidebarRef = useRef<HTMLDivElement | null>(null);
 
-  // Helper function to check if a link is active
   const isActive = (link: string) => activeLink === link;
 
-  // Handle click outside of the sidebar
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         sidebarRef.current &&
         !sidebarRef.current.contains(event.target as Node)
       ) {
-        setActiveLink(null); // Reset active link if clicked outside
+        setActiveLink(null);
       }
     };
 
@@ -33,7 +31,6 @@ export default function SideBar() {
     };
   }, []);
 
-  // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -48,10 +45,10 @@ export default function SideBar() {
     >
       <div
         onClick={() => {
-          scrollToTop(); // Scroll to top when Home is clicked
+          scrollToTop();
           setActiveLink("home");
         }}
-        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-10
+        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-40
             ${isActive("home") ? "opacity-100 z-50" : "hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw]"}
             duration-500 transition-all ease-in-out`}
       >
@@ -62,7 +59,7 @@ export default function SideBar() {
 
       <div
         onClick={() => setActiveLink("projects")}
-        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-10 
+        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-40 
             ${isActive("projects") ? "opacity-100 z-50" : "hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw]"}
             duration-500 transition-all ease-in-out`}
       >
@@ -73,7 +70,7 @@ export default function SideBar() {
 
       <div
         onClick={() => setActiveLink("goals")}
-        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-10 
+        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-40 
             ${isActive("goals") ? "opacity-100 z-50" : "hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw]"}
             duration-500 transition-all ease-in-out`}
       >
@@ -84,7 +81,7 @@ export default function SideBar() {
 
       <div
         onClick={() => setActiveLink("certificates")}
-        className={`mb-1 p-2 overflow-hidden bg-slate-100 rounded-md ml-10 flex flex-col opacity-10
+        className={`mb-1 p-2 overflow-hidden bg-slate-100 rounded-md ml-10 flex flex-col opacity-40
             ${isActive("certificates")
               ? "z-50 opacity-100 h-[32rem] -translate-y-56 duration-500 translate-x-[80%] w-[110%] sm:translate-x-[32vw] md:translate-x-[20vw] lg:translate-x-[20vw]"
               : "hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw] h-10 text-right"}
@@ -100,10 +97,10 @@ export default function SideBar() {
           Certificates <LiaCertificateSolid />
           {isActive("certificates") && (
             <button
-              onClick={() => setActiveLink(null)} // Set active link to null on click
+              onClick={() => setActiveLink(null)}
               className="text-black text-lg hover:opacity-70"
             >
-              &times; {/* Cross icon */}
+              &times;
             </button>
           )}
         </div>
@@ -112,7 +109,7 @@ export default function SideBar() {
 
       <div
         onClick={() => setActiveLink("timeline")}
-        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-10 
+        className={`text-right mb-1 p-2 bg-slate-100 rounded-md opacity-40 
             ${isActive("timeline") ? "opacity-100 z-50" : "hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw]"}
             duration-500 transition-all ease-in-out`}
       >
@@ -123,7 +120,7 @@ export default function SideBar() {
 
       <div
         onClick={() => setActiveLink("contact")}
-        className={`text-right mb-1 p-2 overflow-hidden bg-slate-100 rounded-md ml-10 flex flex-col opacity-10
+        className={`text-right mb-1 p-2 overflow-hidden bg-slate-100 rounded-md ml-10 flex flex-col opacity-40
             ${isActive("contact")
               ? "z-50 opacity-100 h-96 -translate-y-64 duration-500 translate-x-[80%] w-[110%] sm:translate-x-[32vw] md:translate-x-[20vw] lg:translate-x-[20vw]"
               : "hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw] h-10"}

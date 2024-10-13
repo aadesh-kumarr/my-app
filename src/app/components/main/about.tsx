@@ -10,10 +10,10 @@ export default function About() {
         {/* First Block */}
         <div className="text-sm border-black bg-black border   p-2 flex flex-col justify-center items-center text-center">
           <Image
-            src="/education.svg"
+            src="/svgs/education.svg"
             alt="Portrait of Aadesh Kumar"
-            width={80}
-            height={50}
+            width={200}
+            height={10}
             className="rounded p-1"
           />
           <span>Final year student</span>
@@ -22,10 +22,10 @@ export default function About() {
         {/* Second Block */}
         <div className="text-sm border-black bg-black border   p-2 flex flex-col justify-center items-center text-center">
           <Image
-            src="/techie.svg"
+            src="/svgs/techie.svg"
             alt="Techie icon"
-            width={80}
-            height={50}
+            width={200}
+            height={100}
             className="rounded p-1"
           />
           <span>Techie</span>
@@ -34,10 +34,10 @@ export default function About() {
         {/* Third Block */}
         <div className="text-sm border-black bg-black border   p-2 flex flex-col justify-center items-center text-center">
           <Image
-            src="/confident.svg"
+            src="/svgs/confident.svg"
             alt="Confident icon"
-            width={80}
-            height={50}
+            width={200}
+            height={100}
             className="rounded p-1"
           />
           <span>Confident</span>
@@ -46,10 +46,10 @@ export default function About() {
     {/* Fourth block */}
         <div className="text-sm border-black bg-black border   p-2 flex flex-col justify-center items-center text-center">
           <Image
-            src="/internships.svg"
+            src="/svgs/internships.svg"
             alt="Confident icon"
-            width={80}
-            height={50}
+            width={200}
+            height={10}
             className="rounded p-1"
           />
           <span>2 Internships</span>
