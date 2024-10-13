@@ -1,0 +1,65 @@
+.typing-container{
+  overflow-x:visible;
+  width:fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+  
+  .typing-effect {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem; /* Font size */
+    color: white; /* White text color */
+    border-right: 4px solid white; /* Caret effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    width: 0; /* Start width */
+    animation: typing 2.5s steps(28) forwards, blink 0.75s step-end infinite; /* Animation */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; /* Final width */
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent; /* Blink effect */
+    }
+  }
+  
+
+
+  .home_img {
+    background: url('../../../public/portrait.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 3px 0 0 8px rgb(255 215 0 / 20%);
+
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+ }
+
+}
