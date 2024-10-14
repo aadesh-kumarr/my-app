@@ -6,7 +6,7 @@ export default function About() {
             <p className="text-center font-serif py-5  underline opacity-0 text-2xl group-hover:opacity-100 transition-opacity duration-300">
         About Me
       </p>
-      <div className=" flex flex-row  justify-between gap-2 px-auto">
+      <div className=" flex flex-row  justify-around gap-2 px-auto">
         {/* First Block */}
         <div className="text-sm border-black bg-black border   p-2 flex flex-col justify-center items-center text-center">
           <Image

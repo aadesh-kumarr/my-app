@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export function Edureka() {
   return (
-    <div className="border border-neutral-200 m-4 bg-gradient-to-br from-black/40 to-black/10">
+    <div className="border border-neutral-200 m-4 p-2
+               bg-gradient-to-br from-black/40 to-black/10 max-w-full overflow-clip">
       
     <div className="flex flex-col w-full items-center justify-center my-10 ">
       <div
@@ -12,15 +13,16 @@ export function Edureka() {
         <h2>edureka!</h2>
       </div>
       <p className="text-xl pb-4 text-neutral-200 font-bold">Machine Learning and Data Science</p>
-      <div className="flex flex-col items-center justify-center  w-fit mx-10">
+      <div className="flex flex-col items-center justify-center  w-fit">
         <Image
           src={"/online_certificates/edureka_data_science_internship.png"}
-          width={400}
+          width={300}
           height={100}
           alt={"Can't Load Image"}
           className="pb-5 rounded "
         />
-        <div className="flex flex-col tracking md:flex-row gap-4 w-full px-8">
+        
+        <div className="flex flex-col md:flex-row gap-4 w-full ">
           <div className="border-blue-600 border p-5 rounded bg-neutral-200 ">
             <p className="text-neutral-800">
               Completed a{" "}
@@ -43,7 +45,7 @@ export function Edureka() {
             </ul>
           </div>
         </div>
-          <p className="bg-white p-3 mt-5 w-max rounded-full mx-auto text-neutral-800">
+          <p className="bg-white p-3 mt-5  rounded-full mx-auto text-neutral-800">
             Successfully bridged theory with practical application.
           </p>
     
@@ -53,15 +55,65 @@ export function Edureka() {
   );
 }
 
+export function Lostronaunt() {
+  return (
+    <div className="border border-neutral-200 m-4 p-2
+               bg-gradient-to-br from-black/40 to-black/10 max-w-full overflow-clip">
+      
+    <div className="flex flex-col w-full items-center justify-center my-10 ">
+      <div
+        className="text-blue-600 text-4xl font-sans font-extrabold
+                    border-neutral-800 border  rounded-lg bg-neutral-200 mb-2"
+      >
+        <Image src={'/online_certificates/j.png'}
+        alt="oops!!"
+        width={100}
+        height={20}/>      </div>
+      <p className="text-xl pb-4 text-neutral-200 font-bold text-center">Market Analysis and  Web Development</p>
+      <div className="flex flex-col items-center justify-center w-fit">
+        <Image
+          src={"/online_certificates/Lostronaunt.png"}
+          width={300}
+          height={100}
+          alt={"Can't Load Image"}
+          className="pb-5 rounded "
+        />
+        <div className="flex flex-col md:flex-row gap-4 w-full ">
+          <div className="border-blue-600 border p-5 rounded bg-neutral-200 ">
+            <p className="text-neutral-800">
+              Completed a{" "}
+              <span className="font-bold">1-month internship</span> that focused on both market analysis and app development:
+            </p>
 
-export function Lostronaunt(){
-
-    return(
-        <>
-        <div className="border border-neutral-200 m-4 bg-gradient-to-br from-black/40 to to-black/10">
-        
+          </div>
+          <div className="border-blue-600 border p-5 rounded bg-neutral-200">
+            <p className="text-neutral-800 font-bold">
+              DEVELOPMENT ADVANTAGES
+            </p>
+            <ul className="list-disc ml-5 font-semibold text-neutral-800">
+              <li> Gained knowledge of node and Next JS. </li>
+              <li> Created a web-app single handedly. </li>
+              <li> Worked as a Full stack developer.</li>
+            </ul>
+          </div>
+          <div className="border-blue-600 border p-5 rounded bg-neutral-200">
+            <p className="text-neutral-800 font-bold">
+              ANALYSIS ADVANTAGES
+            </p>
+            <ul className="list-disc ml-5 font-semibold text-neutral-800">
+              <li> Got knowledge of how the actual offline market works. </li>
+              <li> Applied the gained knowledge to crearte a web app for managing payments. </li>
+            </ul>
+          </div>
         </div>
-        
-        </>
-    )
+          <p className="bg-white p-3 mt-5 rounded-full mx-auto text-neutral-800">
+            Successfuly created a web-app that reduced the paperwork by 70%.
+          </p>
+    
+        </div>
+    </div>
+    </div>
+  );
 }
+
+
