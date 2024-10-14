@@ -3,14 +3,14 @@ export default function Header() {
   return (
     <div className="">
       <p
-        className=" text-5xl
-      p-4
+        className=" text-3xl sm:text-5xl
+      py-4
       font-mono
       flex max-w-full w-fit mx-auto space-x-5"
       >
-        <div className="flex mx-auto flex-col lg:flex-row text-left">
+        <span className="flex mx-auto flex-col lg:flex-row text-left">
           <span> Welcome&nbsp;</span> <span> To My&nbsp;</span> <span> Projects</span>
-        </div>
+        </span>
         <Image
           src={"/svgs/projects.svg"}
           alt="oops!"

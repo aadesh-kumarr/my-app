@@ -13,8 +13,8 @@ export default function Internship() {
   };
 
   return (
-    <div className="relative">
-      <p className="font-serif text-2xl text-center text-neutral-200 underline underline-offset-4">
+    <div className="relative  mx-4 p-0">
+      <p className="font-serif  text-2xl text-center w-fit mx-auto pt-5 text-neutral-200 underline underline-offset-4">
         INTERNSHIP
       </p>
       <Image
@@ -22,7 +22,7 @@ export default function Internship() {
         src={"/internships.png"}
         width={200}
         height={200}
-        className="mx-auto pt-10 rounded-full cursor-pointer"
+        className="mx-auto w-fit pt-10 rounded-full cursor-pointer"
         onClick={handleclick}
       />
 

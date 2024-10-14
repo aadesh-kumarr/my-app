@@ -17,7 +17,7 @@ export default function Projects() {
 
 
 
-      <div className="mt-14 px-2">
+      <div className="mt-10 px-2">
         <Header />
         <hr className="my-10 border-amber-400" />
 

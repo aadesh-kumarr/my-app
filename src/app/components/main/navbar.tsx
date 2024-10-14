@@ -21,7 +21,7 @@ export default function Navbar() {
           <Link href="/projects">Projects</Link>
         </li>
         <li>
-          <Link href="#">Certifications</Link>
+          <Link href="/Blogs">Blogs</Link>
         </li>
       </ul>
       <Link  href='https://www.youtube.com/@DecodedPerson-hn5np' className="right-2 top-0 absolute flex flex-col text-justify"><p> See me on</p> <span className="flex items-center text-xl"> Youtube <FaYoutube /></span></Link>

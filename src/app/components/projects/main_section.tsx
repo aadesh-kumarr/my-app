@@ -53,11 +53,10 @@ export function Lostronaunt() {
           customer asked for a simple UI with strong backend functionalities.
           Must include the following:
         </p>
-        <ul className="list-disc list-inside text-gray-300 mt-2">
+        <ul className="list-disc list-inside text-left text-gray-300 mt-2">
           <li>Hardcoded email ids for log-in and usage.</li>
           <li>Basic CRUD operations.</li>
-          <li>
-            Message service to be done on order received and payment received.
+          <li>Message service to be done on order received and payment received.
           </li>
         </ul>
         <Link href={"https://lostronauntscrubber.vercel.app/"}>
@@ -101,7 +100,7 @@ export function Lostronaunt() {
             <p>
               <Image src={'svgs//market.svg'}
               alt="oops"
-              width={500}
+              width={300}
               height={100}/>
             </p>
             </div>
