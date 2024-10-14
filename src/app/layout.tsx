@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   title: "Aadesh Kumar",
   description: "Welcome to the world of coding. Where we can walk towards brilliance.",
   keywords: "Aadesh kumar,coding, programming, web development, Next.js, JavaScript, Python, tutorials",
-  authors: [{ name: "Aadesh Kumar", url: "https://yourwebsite.com/about" }],
+  authors: [{ name: "Aadesh Kumar", url: "https://aadesh-portfolio-ivory.vercel.app/ " }],
   openGraph: {
     title: "Aadesh Kumar",
     description: "Discover the world of coding and programming excellence.",
-    url: "https://yourwebsite.com",
+    url: "https://aadesh-portfolio-ivory.vercel.app/ ",
     siteName: "Aadesh Kumar",
     images: [
       {
