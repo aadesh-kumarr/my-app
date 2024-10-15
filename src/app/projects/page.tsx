@@ -10,7 +10,7 @@ export default function Projects() {
         <Navbar />
       </div>
         <hr
-          className="mt-14"
+          className="mt-20"
           style={{ borderColor: "rgba(255, 215, 0, 0.5)" }}
         />
 

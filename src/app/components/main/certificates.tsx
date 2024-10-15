@@ -11,16 +11,19 @@ import {
 
 export function Certificates() {
   const certificates = [
-    "/online_certificates/collegetocorporaee.png",
-    "/online_certificates/KAGGLE.png",
-    "/online_certificates/kimo_introduction.PNG",
-    "/online_certificates/openweaver_python.png",
-    "/online_certificates/perfect_elearning_python.png",
-    "/online_certificates/perfect_ elearning_data-structure.jpg",
-    "/online_certificates/PERFECT_ELEARNING.jpg",
-    "/online_certificates/thinqbator_chatbot.png",
-    "/online_certificates/uptoskills_python_workshop.png",
+    { certificate: "/online_certificates/collegetocorporaee.png", name: "Collegue to Corporatee by DR SUMIT GUPTA UPES" },
+    { certificate: "/online_certificates/KAGGLE.png", name: "python by Kaggle GOOGLE CERTIFIED" },
+    { certificate: "/online_certificates/kimo_introduction.png", name: "Introduction to AI/ML by Kimo" },
+    { certificate: "/online_certificates/openweaver_python.png", name: "Basics of Python by Openweaver" },
+    { certificate: "/online_certificates/perfect_elearning_python.png", name: "Python and Machine learning by Perfect Elearning" },
+    { certificate: "/online_certificates/perfect_elearning_data-structure.jpg", name: "Data Structures in Python by Perfect Elearning" },
+    { certificate: "/online_certificates/PERFECT_ELEARNING.jpg", name: "Python by Perfect Elearning" },
+    { certificate: "/online_certificates/thinqbator_chatbot.png", name: "Chatbot by CiscoThinqbator" },
+    { certificate: "/online_certificates/uptoskills_python_workshop.png", name: "Python by Uptoskills" },
+    { certificate: "/online_certificates/internshaala_brain_booster.png", name: "Brain Booster Quiz by InternsShaala" }
   ];
+  
+
 
   return (
     <>
@@ -42,8 +45,8 @@ export function Certificates() {
         className="w-full max-w-xs mt-5"
       >
         <CarouselContent className="mt-1 h-[250px]">
-          {certificates.map((certificate,index) => (
-            <CarouselItem key={certificate} className="mt-1 md:basis-1/2">
+          {certificates.map((certificates,index) => (
+            <CarouselItem key={certificates.name} className="mt-1 md:basis-1/2">
               <div className="p-1">
                 <Card>
                   <CardContent
@@ -51,16 +54,16 @@ export function Certificates() {
                                           bg-gradient-to-t from-slate-200 to-slate-600 h-full w-full p-2 "
                   >
                     <Image
-                      src={certificate}
+                      src={certificates.certificate}
                       width={200}
                       height={90}
                       alt="cant load image"
                       className="pt-2 rounded"
                     />
                     <span className="text-center">
-                      Lorem ipsum dolor sit amet.
+                      {certificates.name}
                     </span>
-                    <span>{index+1}/{certificates.length}</span>
+                    <span>{index+1}/{certificates.certificate.length}</span>
                   </CardContent>
                 </Card>
               </div>
