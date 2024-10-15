@@ -74,7 +74,7 @@ export function Lostronaunt() {
                     border-neutral-800 border  rounded-lg bg-neutral-200 mb-2"
         >
           <Image
-            src={"/online_certificates/j.png"}
+            src="/online_certificates/J.png"
             alt="oops!!"
             width={100}
             height={20}
@@ -85,7 +85,7 @@ export function Lostronaunt() {
         </p>
         <div className="flex flex-col items-center justify-center w-fit">
           <Image
-            src={"/online_certificates/Lostronaunt.png"}
+            src="/online_certificates/lostronaunt.png"
             width={300}
             height={100}
             alt={"Can't Load Image"}

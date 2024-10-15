@@ -24,7 +24,7 @@ export default function Resume() {
             <SheetTitle>RESUME</SheetTitle>
             <SheetDescription >
             <Image
-        src="/AADESH.PNG"
+        src="/AADESH.png"
         alt="Portrait of Aadesh Kumar"
         width={500}
         height={200}
