@@ -2,11 +2,11 @@
 import { useState, useEffect, useRef } from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { LiaCertificateSolid } from "react-icons/lia";
-import { CiViewTimeline } from "react-icons/ci";
+// import { CiViewTimeline } from "react-icons/ci";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { Contact } from "./contact";
 import { Certificates } from "./certificates";
-import { GoGoal } from "react-icons/go";
+// import { GoGoal } from "react-icons/go";
 import { BsFillMortarboardFill } from "react-icons/bs";
 import Link from "next/link";
 

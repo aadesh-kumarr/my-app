@@ -1,7 +1,7 @@
 "use client"
 import Navbar from "../components/main/navbar";
 import Switch from "../components/blogs/switch";
-import Personal_blogs from "../components/blogs/personal_blogs";
+// import Personal_blogs         00 "../components/blogs/personal_blogs";
 import { useState } from "react";
 
 export default function Blog() {
