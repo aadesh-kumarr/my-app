@@ -35,7 +35,7 @@ export default function SideBar() {
   return (
     <div
       ref={sidebarRef}
-      className="flex flex-col absolute z-50 text-xl font-bold w-80 -translate-x-[93%] mt-24 text-slate-900"
+      className="flex flex-col absolute z-50 text-xl font-bold w-80 -translate-x-[93%] mt-36 text-slate-900"
     >
       <Link href={"/education"}
         onClick={() => setActiveLink("null")}
@@ -66,7 +66,7 @@ export default function SideBar() {
         </div>
       </Link>
 
-      <div
+      {/* <div
         onClick={() => setActiveLink("goals")}
         className={`text-right mb-1 p-2 bg-slate-100 rounded-md ${
           isActive("goals")
@@ -78,7 +78,7 @@ export default function SideBar() {
         <div className="flex flex-row items-center justify-end gap-4 cursor-default">
           Goals <GoGoal />
         </div>
-      </div>
+      </div> */}
 
       <div
         onClick={() => setActiveLink("certificates")}
@@ -99,7 +99,7 @@ export default function SideBar() {
         <Certificates />
       </div>
 
-      <div
+      {/* <div
         onClick={() => setActiveLink("timeline")}
         className={`text-right mb-1 p-2 bg-slate-100 rounded-md ${
           isActive("timeline")
@@ -111,7 +111,7 @@ export default function SideBar() {
         <div className="flex flex-row items-center justify-end gap-4 cursor-default">
           Timeline <CiViewTimeline />
         </div>
-      </div>
+      </div> */}
 
       <div
         onClick={() => setActiveLink("contact")}

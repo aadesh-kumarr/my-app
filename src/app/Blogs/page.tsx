@@ -21,7 +21,8 @@ export default function Blog() {
 
       {/* Optionally display current mode */}
       <div className="text-center mt-5">
-        <Personal_blogs />
+        {/* <Personal_blogs /> */}
+        blogs are yet to come
         <h2>Current Mode: {blog ? "Personal" : "Professional"}</h2>
       </div>
     </div>
