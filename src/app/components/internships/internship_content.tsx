@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Edureka() {
   return (
     <div
-      className="border border-neutral-200 my-4 mx-0 p-2
+      className="border border-neutral-200 my-4 p-2
                bg-gradient-to-br from-black/40 to-black/10 max-w-full overflow-clip"
     >
       <div className="flex flex-col w-full items-center justify-center my-10 ">
@@ -11,12 +11,17 @@ export function Edureka() {
           className="text-blue-600 text-4xl font-sans font-extrabold
                     border-neutral-800 border  rounded-lg bg-neutral-200 mb-2"
         >
-          <h2>edureka!</h2>
+          <Image
+            src="/online_certificates/J.png"
+            alt="oops!!"
+            width={100}
+            height={20}
+          />
         </div>
         <p className="text-xl pb-4 text-neutral-200 font-bold text-center">
           Machine Learning and Data Science
         </p>
-        <div className="flex flex-col items-center justify-center  w-fit">
+        <div className="flex flex-col items-center justify-center w-fit">
           <Image
             src={"/online_certificates/edureka_data_science_internship.png"}
             width={300}
@@ -26,7 +31,7 @@ export function Edureka() {
           />
 
           <div className="flex flex-col md:flex-row gap-4 w-full ">
-            <div className="border-blue-600 border p-5 rounded bg-neutral-200 ">
+            <div className="border-blue-600 border p-5 rounded bg-neutral-200">
               <p className="text-neutral-800">
                 Completed a{" "}
                 <span className="font-bold">
@@ -53,7 +58,7 @@ export function Edureka() {
               </ul>
             </div>
           </div>
-          <p className="bg-white p-3 mt-5  rounded-full mx-auto text-neutral-800">
+          <p className="bg-white p-3 mt-5 rounded-full mx-auto text-neutral-800">
             Successfully bridged theory with practical application.
           </p>
         </div>
@@ -61,6 +66,7 @@ export function Edureka() {
     </div>
   );
 }
+
 
 export function Lostronaunt() {
   return (
