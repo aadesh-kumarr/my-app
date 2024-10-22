@@ -8,15 +8,11 @@ export function Edureka() {
     >
       <div className="flex flex-col w-full items-center justify-center my-10 ">
         <div
-          className="text-blue-600 text-4xl font-sans font-extrabold
+          className="text-blue-600 px-2 p-1 text-4xl font-sans font-extrabold
                     border-neutral-800 border  rounded-lg bg-neutral-200 mb-2"
         >
-          <Image
-            src="/online_certificates/J.png"
-            alt="oops!!"
-            width={100}
-            height={20}
-          />
+          <div className="">edureka!</div>
+      
         </div>
         <p className="text-xl pb-4 text-neutral-200 font-bold text-center">
           Machine Learning and Data Science
