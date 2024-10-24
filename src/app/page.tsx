@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="bg-gradient-to-br absolute 
-      max-w-full from-stone-950 to-stone-900 no-scrollbar overflow-x-hidden">
+      max-w-full from-stone-950 to-stone-700 no-scrollbar overflow-x-hidden">
       
       <div className="fixed top-0 left-0 px-2 right-0 z-40">
         <SideBar />
