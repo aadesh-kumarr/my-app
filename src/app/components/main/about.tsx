@@ -22,7 +22,7 @@ export default function About({ internshipRef }: AboutProps) {
         About Me
       </p>
 
-      <div className="flex flex-row px-4 gap-2">
+      <div className="flex flex-row justify-between px-4 gap-2">
         {/* First Block */}
         <Link href={'/education'} className="text-sm border-black bg-stone-950 shadow-lsm shadow-black border p-2 flex flex-col justify-center items-center text-center">
           <Image
