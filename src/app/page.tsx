@@ -13,10 +13,10 @@ export default function Home() {
   const internshipRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <div className="bg-gradient-to-br absolute 
-      max-w-full from-stone-950 to-stone-700 no-scrollbar overflow-x-hidden">
+    <div className="bg-stone-800 absolute 
+      max-w-full no-scrollbar overflow-x-hidden">
       
-      <div className="fixed top-0 left-0 px-2 right-0 z-40">
+      <div className="fixed top-0 left-0  right-0 z-40">
         <SideBar />
         <Resume />
         <Navbar />

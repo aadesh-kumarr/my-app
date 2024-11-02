@@ -42,9 +42,7 @@ export default function Switch({
           Professional
         </p>
       </div>
-      <div className="flex justify-center p-1 bg-neutral-700 w-fit mx-auto rounded-full">
-        <input type="text" className="rounded-full px-2 text-black" placeholder="search " />
-      </div>
+
     </div>
   );
 }

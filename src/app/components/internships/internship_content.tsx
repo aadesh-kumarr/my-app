@@ -3,16 +3,15 @@ import Image from "next/image";
 export function Edureka() {
   return (
     <div
-      className="border border-neutral-200 my-4 p-2
+      className="border border-amber-400 my-4 p-2
                bg-gradient-to-br from-black/40 to-black/10 max-w-full overflow-clip"
     >
       <div className="flex flex-col w-full items-center justify-center my-10 ">
         <div
-          className="text-blue-600 px-2 p-1 text-4xl font-sans font-extrabold
-                    border-neutral-800 border  rounded-lg bg-neutral-200 mb-2"
+          className="text-blue-600  px-2 p-1 text-4xl font-sans font-extrabold
+                    border-amber-400 border rounded-lg bg-neutral-200 mb-2"
         >
           <div className="">edureka!</div>
-      
         </div>
         <p className="text-xl pb-4 text-neutral-200 font-bold text-center">
           Machine Learning and Data Science
@@ -27,7 +26,7 @@ export function Edureka() {
           />
 
           <div className="flex flex-col md:flex-row gap-4 w-full ">
-            <div className="border-blue-600 border p-5 rounded bg-neutral-200">
+            <div className="border-amber-400 border p-5 rounded bg-neutral-200">
               <p className="text-neutral-800">
                 Completed a{" "}
                 <span className="font-bold">
@@ -41,7 +40,7 @@ export function Edureka() {
                 <li>Reinforcement learning</li>
               </ul>
             </div>
-            <div className="border-blue-600 border p-5 rounded bg-neutral-200">
+            <div className="border-amber-400 border p-5 rounded bg-neutral-200">
               <p className="text-neutral-800">
                 Worked in a{" "}
                 <span className="font-bold">team of 20 members</span> to develop
@@ -63,17 +62,16 @@ export function Edureka() {
   );
 }
 
-
 export function Lostronaunt() {
   return (
     <div
-      className="border border-neutral-200 my-4 p-2
+      className="border border-amber-400 my-4 p-2
                bg-gradient-to-br from-black/40 to-black/10 max-w-full overflow-clip"
     >
       <div className="flex flex-col w-full items-center justify-center my-10 ">
         <div
           className="text-blue-600 text-4xl font-sans font-extrabold
-                    border-neutral-800 border  rounded-lg bg-neutral-200 mb-2"
+                    border-amber-400 border rounded-lg bg-neutral-200 mb-2"
         >
           <Image
             src="/online_certificates/J.png"
@@ -94,12 +92,12 @@ export function Lostronaunt() {
             className="pb-5 rounded "
           />
           <div className="flex flex-col md:flex-row gap-4 w-full ">
-            <div className="border-blue-600 border p-5 rounded bg-neutral-200 ">
+            <div className="border-amber-400 border p-5 rounded bg-neutral-200 ">
               <p className="text-neutral-800">
-              Completed a <span className="font-bold">1-month internship</span> that provided an immersive experience focusing on both market analysis and app development. This internship allowed me to gain valuable insights into market trends and customer behavior while also honing my technical skills in developing applications, significantly enhancing my professional capabilities.    
-                        </p>
+                Completed a <span className="font-bold">1-month internship</span> that provided an immersive experience focusing on both market analysis and app development. This internship allowed me to gain valuable insights into market trends and customer behavior while also honing my technical skills in developing applications, significantly enhancing my professional capabilities.
+              </p>
             </div>
-            <div className="border-blue-600 border p-5 rounded bg-neutral-200">
+            <div className="border-amber-400 border p-5 rounded bg-neutral-200">
               <p className="text-neutral-800 font-bold">
                 DEVELOPMENT ADVANTAGES
               </p>
@@ -109,20 +107,19 @@ export function Lostronaunt() {
                 <li> Worked as a Full stack developer.</li>
               </ul>
             </div>
-            <div className="border-blue-600 border p-5 rounded bg-neutral-200">
+            <div className="border-amber-400 border p-5 rounded bg-neutral-200">
               <p className="text-neutral-800 font-bold">ANALYSIS ADVANTAGES</p>
               <ul className="list-disc ml-5 font-semibold text-neutral-800">
                 <li> Got knowledge of how the actual offline market works. </li>
                 <li>
-                  {" "}
-                  Applied the gained knowledge to crearte a web app for managing
-                  payments.{" "}
+                  Applied the gained knowledge to create a web app for managing
+                  payments.
                 </li>
               </ul>
             </div>
           </div>
           <p className="bg-white p-3 mt-5 rounded-full mx-auto text-neutral-800">
-            Successfuly created a web-app that reduced the paperwork by 70%.
+            Successfully created a web-app that reduced the paperwork by 70%.
           </p>
         </div>
       </div>

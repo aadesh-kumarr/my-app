@@ -35,7 +35,7 @@ export default function SideBar() {
   return (
     <div
       ref={sidebarRef}
-      className="flex flex-col absolute z-50 text-xl font-bold w-80 -translate-x-[93%] mt-36 text-slate-900"
+      className="flex flex-col absolute z-50 text-xl ml-2 font-bold w-80 -translate-x-[93%] mt-36 text-slate-900"
     >
       <Link href={"/education"}
         onClick={() => setActiveLink("null")}
