@@ -38,7 +38,7 @@ export function Lostronaunt() {
                    bg-white bg-opacity-10 
                    w-fit p-4 mx-auto rounded-2xl shadow-md"
       >
-        For Lostronaunt
+        For ScrubVibe
       </p>
       <p className="mt-2 text-gray-300 italic">
         Solo project done during internship.

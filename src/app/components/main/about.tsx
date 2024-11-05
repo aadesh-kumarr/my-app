@@ -36,7 +36,7 @@ export default function About({ internshipRef }: AboutProps) {
         </Link>
 
         {/* Second Block */}
-        <div className="text-sm border-black bg-stone-950 shadow-lsm shadow-black border p-2 flex flex-col justify-center items-center text-center">
+        <Link href={'/projects'} className="text-sm border-black bg-stone-950 shadow-lsm shadow-black border p-2 flex flex-col justify-center items-center text-center">
           <Image
             src="/svgs/techie.svg"
             alt="Techie icon"
@@ -44,8 +44,8 @@ export default function About({ internshipRef }: AboutProps) {
             height={100}
             className="rounded p-1"
           />
-          <span>Techie</span>
-        </div>
+          <span>4 projects</span>
+        </Link>
 
         {/* Third Block */}
         <div className="text-sm border-black bg-stone-950 shadow-sm  shadow-black border p-2 flex flex-col justify-center items-center text-center">
