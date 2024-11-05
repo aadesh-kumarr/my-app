@@ -12,10 +12,12 @@ export default function Projects() {
 
       <div className="mt-10 px-2">
         <Header />
+        <div className="space-y-5">
         <hr className="my-10 border-amber-400" />
         <Ecommerce />
         <Lostronaunt />
         <Django />
+        </div>
       </div>
     </div>
   );
