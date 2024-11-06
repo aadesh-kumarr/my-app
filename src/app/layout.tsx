@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Explore the portfolio of Aadesh Kumar, a skilled web developer specializing in Next.js, Python, and scalable web applications.",
   keywords:
-    "Aadesh Kumar, web developer, programmer, Next.js, JavaScript, Python, coding tutorials, portfolio, React developer, scalable applications",
+    "Aadesh Kumar, decoded person , web developer, programmer, Next.js, JavaScript, Python, coding tutorials, portfolio, React developer, scalable applications",
   authors: [
     { name: "Aadesh Kumar", url: "https://aadesh-portfolio-ivory.vercel.app/" },
   ],
