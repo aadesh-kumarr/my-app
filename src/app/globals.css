@@ -35,6 +35,13 @@ a {
 }
 
 
+.contact-btns{
+  @apply text-2xl hover:text-black text-black 
+  md:text-gray-500
+
+}
+
+
 a.anim::after {
   content: "";
   position: absolute;

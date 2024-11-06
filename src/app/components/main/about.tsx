@@ -18,8 +18,8 @@ export default function About({ internshipRef }: AboutProps) {
 
   return (
     <div className="border border-amber-400 bg-stone-900 text-zinc-200 mt-10 m-4 mb-5 pb-4 relative group">
-      <p className="text-center font-serif py-5 underline opacity-0 text-2xl group-hover:opacity-100 transition-opacity duration-300">
-        About Me
+      <p className="anim corsor-default text-center font-serif py-5  text-2xl">
+       <Link href="" className='anim'> About Me</Link>
       </p>
 
       <div className="flex flex-row justify-evenly px-1 overflow-hidden gap-2">

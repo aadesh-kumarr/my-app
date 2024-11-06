@@ -37,7 +37,7 @@ export default function Resume() {
               <a
                 href="/AADESH KUMAR.pdf" // Change this to the actual path of your resume file
                 download
-                className="mt-4 inline-block px-4 py-2 bg-amber-500 text-white rounded hover:bg-amber-400"
+                className="mt-4 inline-block px-4 py-2 bg-amber-500 text-white rounded hover:bg-amber-600"
               >
                 Download Resume
               </a>
