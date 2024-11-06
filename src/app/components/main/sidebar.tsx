@@ -66,19 +66,8 @@ export default function SideBar() {
         </div>
       </Link>
 
-      {/* <div
-        onClick={() => setActiveLink("goals")}
-        className={`text-right mb-1 p-2 bg-slate-100 rounded-md ${
-          isActive("goals")
-            ? "opacity-100 z-50"
-            : "opacity-40 hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw]"
-        }
-        duration-500 transition-all ease-in-out`}
-      >
-        <div className="flex flex-row items-center justify-end gap-4 cursor-default">
-          Goals <GoGoal />
-        </div>
-      </div> */}
+
+    
 
       <div
         onClick={() => setActiveLink("certificates")}
@@ -99,19 +88,7 @@ export default function SideBar() {
         <Certificates />
       </div>
 
-      {/* <div
-        onClick={() => setActiveLink("timeline")}
-        className={`text-right mb-1 p-2 bg-slate-100 rounded-md ${
-          isActive("timeline")
-            ? "opacity-100 z-50"
-            : "opacity-40 hover:opacity-100 hover:translate-x-[25vw] lg:hover:translate-x-[10vw]"
-        }
-        duration-500 transition-all ease-in-out`}
-      >
-        <div className="flex flex-row items-center justify-end gap-4 cursor-default">
-          Timeline <CiViewTimeline />
-        </div>
-      </div> */}
+
 
       <div
         onClick={() => setActiveLink("contact")}
