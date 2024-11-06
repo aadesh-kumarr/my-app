@@ -1,32 +1,41 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
+// Define metadata with optimized keywords and added Twitter metadata for better SEO and social sharing
 export const metadata: Metadata = {
-  title: "Aadesh Kumar",
-  description: "Welcome to the world of coding. Where we can walk towards brilliance.",
-  keywords: "Aadesh kumar,coding, programming, web development, Next.js, JavaScript, Python, tutorials",
-  authors: [{ name: "Aadesh Kumar", url: "https://aadesh-portfolio-ivory.vercel.app/ " }],
+  title: "Aadesh Kumar - Web Developer & Programmer",
+  description:
+    "Explore the portfolio of Aadesh Kumar, a skilled web developer specializing in Next.js, Python, and scalable web applications.",
+  keywords:
+    "Aadesh Kumar, web developer, programmer, Next.js, JavaScript, Python, coding tutorials, portfolio, React developer, scalable applications",
+  authors: [
+    { name: "Aadesh Kumar", url: "https://aadesh-portfolio-ivory.vercel.app/" },
+  ],
   openGraph: {
-    title: "Aadesh Kumar",
-    description: "Discover the world of coding and programming excellence.",
-    url: "https://aadesh-portfolio-ivory.vercel.app/ ",
-    siteName: "Aadesh Kumar",
+    title: "Aadesh Kumar - Web Developer & Programmer",
+    description:
+      "Discover the world of coding and programming excellence with Aadesh Kumar's portfolio, showcasing projects and skills in web development.",
+    url: "https://aadesh-portfolio-ivory.vercel.app/",
+    siteName: "Aadesh Kumar's Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/portrait.png", // Relative path to the image in the public folder
+        width: 1200,
+        height: 630,
+        alt: "Aadesh Kumar Portfolio Banner",
+      },
+    ],
   },
-
+  twitter: {
+    card: "summary_large_image",
+    site: "@aadeshkumar",
+    title: "Aadesh Kumar - Web Developer & Programmer",
+    description:
+      "Portfolio showcasing projects, skills, and expertise in web development.",
+    images: "/portrait.png", // Relative path for Twitter preview
+  },
 };
 
 export default function RootLayout({
@@ -37,11 +46,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* SEO-friendly font preloading */}
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="canonical"
+          href="https://aadesh-portfolio-ivory.vercel.app/"
+        />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased no-scrollbar`}>
-        {children}
-      </body>
+      <body className="antialiased no-scrollbar">{children}</body>
     </html>
   );
 }
