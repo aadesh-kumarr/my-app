@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+import SideBar from "./components/main/sidebar";
+import Resume from "./components/main/resume";
+import Navbar from "./components/main/navbar";
+
 import "./globals.css";
 
 // Define metadata with optimized keywords and added Twitter metadata for better SEO and social sharing
@@ -60,6 +64,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
+      <div className="fixed top-0 left-0  right-0 z-40">
+        <SideBar />
+        <Resume />
+        <Navbar />
+      </div>
       <body className="antialiased no-scrollbar">{children}</body>
     </html>
   );

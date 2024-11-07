@@ -1,9 +1,7 @@
 "use client"
-import Navbar from "./components/main/navbar";
 import TypingAnimation from "./components/main/typing";
 import Portrait from "./components/main/portrait";
-import SideBar from "./components/main/sidebar";
-import Resume from "./components/main/resume";
+
 import About from "./components/main/about";
 import Internship from "./components/internships/internships";
 import { useRef } from "react";
@@ -16,11 +14,7 @@ export default function Home() {
     <div className="bg-stone-800 absolute 
       max-w-full no-scrollbar overflow-x-hidden">
       
-      <div className="fixed top-0 left-0  right-0 z-40">
-        <SideBar />
-        <Resume />
-        <Navbar />
-      </div>
+ 
 
       <hr className="mt-20" style={{ borderColor: 'rgba(255, 215, 0, 0.5)' }} />
       

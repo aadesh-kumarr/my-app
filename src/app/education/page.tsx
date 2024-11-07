@@ -1,5 +1,4 @@
 import { FaGraduationCap, FaSchool, FaUniversity } from "react-icons/fa";
-import Navbar from "../components/main/navbar";
 import Image from "next/image";
 export default function Education() {
   return (
@@ -7,7 +6,6 @@ export default function Education() {
 
     
 <div className="fixed top-0 left-0 px-2 right-0 z-50" >
-        <Navbar />
       </div>
         <hr
           className="mt-20"
