@@ -1,4 +1,5 @@
 .typing-container{
+  z-index: 50;
   overflow-x:visible;
   width:fit-content;
   margin: auto;
@@ -31,6 +32,16 @@
     }
   }
   
+
+.img_shadow{
+  box-shadow: 5px 5px 12px 8px rgb(0, 0, 0), 2px 2px 5px 8px rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
 
 
   .home_img {

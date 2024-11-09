@@ -61,6 +61,11 @@ a.anim:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
+
+.svgs{
+  @apply text-sm border-black bg-stone-950  border p-2 flex flex-col justify-center items-center text-center
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { RefObject } from 'react';
 import Link from 'next/link';
+import { Vortex } from '@/components/ui/vortex';
 
 interface AboutProps {
   internshipRef: RefObject<HTMLDivElement>; // Accept ref as a prop
@@ -17,14 +18,21 @@ export default function About({ internshipRef }: AboutProps) {
   };
 
   return (
-    <div className="border border-amber-400 bg-stone-900 text-zinc-200 mt-10 m-4 mb-5 pb-4 relative group">
+    <div className="border border-amber-400 z-0 text-zinc-200 mb-40 mt-32 lg:mt-80 m-4 ">
+      <Vortex     
+        backgroundColor=''
+        rangeY={800}
+        particleCount={50}
+        baseHue={120}
+        className=" py-5"
+      >
       <p className="anim corsor-default text-center font-serif py-5  text-2xl">
        <Link href="" className='anim'> About Me</Link>
       </p>
 
       <div className="flex flex-row justify-evenly px-1 overflow-hidden gap-2">
         {/* First Block */}
-        <Link href={'/education'} className="text-sm border-black bg-stone-950 shadow-lsm shadow-black border p-2 flex flex-col justify-center items-center text-center">
+        <Link href={'/education'} className="svgs">
           <Image
             src="/svgs/education.svg"
             alt="Portrait of Aadesh Kumar"
@@ -36,7 +44,7 @@ export default function About({ internshipRef }: AboutProps) {
         </Link>
 
         {/* Second Block */}
-        <Link href={'/projects'} className="text-sm border-black bg-stone-950 shadow-lsm shadow-black border p-2 flex flex-col justify-center items-center text-center">
+        <Link href={'/projects'} className="svgs">
           <Image
             src="/svgs/techie.svg"
             alt="Techie icon"
@@ -48,7 +56,7 @@ export default function About({ internshipRef }: AboutProps) {
         </Link>
 
         {/* Third Block */}
-        <div className="text-sm border-black bg-stone-950 shadow-sm  shadow-black border p-2 flex flex-col justify-center items-center text-center">
+        <div className="svgs">
           <Image
             src="/svgs/confident.svg"
             alt="Confident icon"
@@ -61,7 +69,7 @@ export default function About({ internshipRef }: AboutProps) {
 
         {/* Fourth Block (Scroll to Internship) */}
         <div
-          className="text-sm border-black bg-stone-950 shadow-sm shadow-black border p-2 flex flex-col justify-center items-center text-center cursor-pointer"
+          className="svgs"
           onClick={handleScrollToInternship}
         >
           <Image
@@ -111,6 +119,7 @@ export default function About({ internshipRef }: AboutProps) {
 
         <p>Let&apos;s connect and explore how we can work together to create impactful digital solutions!</p>
       </div>
+      </Vortex>
     </div>
   );
 }

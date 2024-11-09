@@ -1,24 +1,28 @@
 import Image from "next/image";
 export default function Header() {
   return (
-    <div className="">
+      <div className="flex sm:flex-row-reverse flex-col">
+        <div className="flex sm:flex-col sm:w-1/2">
       <p
-        className=" text-3xl sm:text-5xl
+        className="
+        text-5xl
       py-4
       font-mono
-      flex max-w-full w-fit mx-auto space-x-5"
+      flex mx-auto space-x-5 "
       >
-        <span className="flex mx-auto flex-col lg:flex-row text-left">
+        <span className="flex mx-auto flex-col lg:flex-row text-left text-amber-400 ">
           <span> Welcome&nbsp;</span> <span> To My&nbsp;</span> <span> Projects</span>
         </span>
+        </p>
         <Image
           src={"/svgs/projects.svg"}
           alt="oops!"
-          width={180}
-          height={200}
+          width={200}
+          height={250}
+          className="mx-auto"
         />
-      </p>
-      <div className="border border-white rounded-lg p-2 text-justify">
+        </div>
+      <div className="border border-white rounded-lg p-2 text-justify sm:w-1/2">
         <p className="text-3xl py-4">Why Projects Matter?</p>
         <p className="">
           Projects are more than just tasks—they are proof of expertise,

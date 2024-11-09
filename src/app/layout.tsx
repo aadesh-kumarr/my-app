@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SideBar from "./components/main/sidebar";
 import Resume from "./components/main/resume";
 import Navbar from "./components/main/navbar";
+import Footer from "./components/main/footer";
 
 import "./globals.css";
 
@@ -64,12 +65,18 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
+
+      <body className="antialiased no-scrollbar">
       <div className="fixed top-0 left-0  right-0 z-40">
         <SideBar />
         <Resume />
         <Navbar />
-      </div>
-      <body className="antialiased no-scrollbar">{children}</body>
+      </div>{children}
+      <div className="">
+       <Footer/>
+       </div>
+        </body>
+   
     </html>
   );
 }

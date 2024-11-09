@@ -37,7 +37,7 @@ export default function Blog() {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <div className="max-w-full absolute text-white w-screen bg-gradient-to-br from-stone-950 to-stone-800 no-scrollbar overflow-x-hidden">
+    <div className="max-w-full text-white w-screen bg-gradient-to-br from-stone-950 to-stone-800 no-scrollbar overflow-x-hidden">
       <div className="fixed top-0 left-0 px-2 right-0 ">
         <Navbar />
       </div>
