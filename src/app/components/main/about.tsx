@@ -22,7 +22,7 @@ export default function About({ internshipRef }: AboutProps) {
       <Vortex     
         backgroundColor=''
         rangeY={800}
-        particleCount={50}
+        particleCount={500}
         baseHue={120}
         className=" py-5"
       >
