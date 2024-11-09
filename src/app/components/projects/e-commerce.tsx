@@ -24,6 +24,7 @@ export default function Ecommerce() {
   };
 
   return (
+  
     <div className="mx-auto rounded-lg border border-gray-700 shadow-xl flex flex-col justify-center items-center bg-neutral-900/20">
       <p className="text-xl text-center mt-5 text-amber-400 font-semibold bg-white bg-opacity-10 w-fit p-4 mx-auto rounded-2xl shadow-md">
         For Lostronaunt
