@@ -122,10 +122,5 @@ a.anim:hover::after {
   }
 }
 
-@layer base {
-  
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+
 
