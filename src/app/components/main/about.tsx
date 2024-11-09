@@ -24,7 +24,7 @@ export default function About({ internshipRef }: AboutProps) {
         rangeY={800}
         particleCount={500}
         baseHue={120}
-        className=" py-5"
+        className=" py-6"
       >
       <p className="anim corsor-default text-center font-serif py-5  text-2xl">
        <Link href="" className='anim'> About Me</Link>
